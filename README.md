@@ -14,4 +14,6 @@ Where:
  
 If you do not have a "scripts" folder, run "mkdir scripts" before.
 
-### Note: for blastx, you use the output of the assembly (Trinity.fasta, or the partial files you created using split_fasta.py and Trinity.fasta), for blastp you use the output of TransDecoder.LongOrfs (longest_orfs.pep, or the partial files you created using split_fasta.py and longest_orfs.pep)
+### Note
+  - For **blastx**, you use the output of the assembly (_Trinity.fasta_, or the partial files you created using split_fasta.py and Trinity.fasta)
+  - For **blastp** you use the output of TransDecoder.LongOrfs (_longest_orfs.pep_, or the partial files you created using split_fasta.py and longest_orfs.pep)
