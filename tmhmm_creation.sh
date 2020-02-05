@@ -1,5 +1,5 @@
 echo "#!/bin/sh
-#SBATCH --account=def-germain1
+#SBATCH --account=$1
 #SBATCH --job-name=tmhmm
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1
@@ -10,7 +10,7 @@ module purge
 module load nixpkgs/16.09 gcc/7.3.0
 module load tmhmm
 
-cd /home/karencgs/scratch/INRA/assembly_larch/trinity_larch/Larch_annotation/trinotate/batch_cds
+cd $2
 echo 'Starting TMHMM'
-tmhmm --short < $1 > /scratch/karencgs/INRA/assembly_larch/trinity_larch/Larch_annotation/trinotate/tmhmm.out_$2
+tmhmm --short < $3 > tmhmm.out_$4
 echo 'Finished TMHMM'"
