@@ -35,11 +35,8 @@ Where:
  - $INPUT_DIR is the directory where you saved the batch files created by split_fasta.py
  - batch_prefix is the name you gave to the batch files created by split_fasta.py with longest_orfs.pep
 
-### After all hmmscan scripts have finished, do:
- TrinotatePFAM.out_$3\
- /cvmfs/soft.mugqic/CentOS6/genomes/pfam_db/Pfam-A.hmm\
- $4 \
-> HMM_pfam.out_$3
+### After all hmmscan scripts have finished, do
+
 > for i in {0..X}; do cat TrinotatePFAM.out_$i >> TrinotatePFAM.out; cat HMM_pfam.out_$i >> HMM__pfam.out; done
 
 ## 4. rnammer_creation.sh
