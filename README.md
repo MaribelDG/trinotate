@@ -41,3 +41,13 @@ Where:
  - $TRINOTATE_DIR is the directory of the trinotate you are using
  - $TRINITY.FASTA is the output of the assembly
  - $PATH_RNAMMER is the path to the rnammer you are using
+ 
+ ## To run signalp_creation.sh, do:
+
+ > sh signalp_creation.sh $ACCOUNT $INPUT_DIR $SIGNALP $PEP > scripts/run_signalp.sh
+ 
+Where:
+ - $ACCOUNT is the name of the account you use to run the jobs. Normally "def-something"
+ - $INPUT_DIR is the directory where you have the output of the assembly
+ - $SIGNALP is the path to the signalp you are using
+ - $PEP is the TransDecoder.LongOrfs output (longest_orfs.pep)
