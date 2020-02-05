@@ -65,3 +65,17 @@ Where:
  - $INPUT_DIR is the directory where you have the output of the assembly
  - $SIGNALP is the path to the signalp you are using
  - $PEP is the TransDecoder.LongOrfs output (longest_orfs.pep)
+ 
+ ## 7. tmhmm_creation
+
+ > for i in {0..X}; do sh tmhmm_creation.sh $ACCOUNT $INPUT_DIR batch_prefix_$i $i > scripts/tmhmm_$i ; done
+ 
+Where:
+ - X = number of batch files created by split_fasta.py
+ - $ACCOUNT is the name of the account you use to run the jobs. Normally "def-something"
+ - $INPUT_DIR is the directory where you saved the batch files created by split_fasta.py
+ - batch_prefix is the name you gave to the batch files created by split_fasta.py with longest_orfs.pep
+
+### After all tmhmm scripts have finished, do
+
+> for i in {0..X}; do cat tmhmm.out_$i >> tmhmm.out; done
