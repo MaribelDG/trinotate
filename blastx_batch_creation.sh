@@ -1,6 +1,6 @@
 echo "#!/bin/sh
 #SBATCH --account=$ACCOUNT
-#SBATCH --job-name=blastx
+#SBATCH --job-name=blastx_$5
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4
