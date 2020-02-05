@@ -1,7 +1,7 @@
 # trinotate
 Scripts for trinotate
 
-To run blastx_batch_creation, do:
+To run blastx_batch_creation.sh, do:
 
   > for i in {0..X}; do blastx_batch_creation.sh $ACCOUNT $INPUT_DIR batch_prefix_$i $DB $i > scripts/blastx_$i ; done
 
