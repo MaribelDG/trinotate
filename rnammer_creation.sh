@@ -11,10 +11,8 @@ module load nixpkgs/16.09 gcc/5.4.0 intel/2016.4
 
 echo 'Starting RNAmmer'
 
-cd $2
-$3/util/rnammer_support/RnammerTranscriptome.pl\
- --transcriptome $4\
- --path_to_rnammer\
- $5
+$2/util/rnammer_support/RnammerTranscriptome.pl\
+ --transcriptome $3/$4
+ --path_to_rnammer $5
 
 echo 'Finished RNAmmer' "
