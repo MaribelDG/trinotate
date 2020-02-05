@@ -4,6 +4,8 @@ Scripts for trinotate
 
 ## 1. TransDecoder.LongOrfs
 
+Open TransDecoder.md and run the part for TransDecoder.LongOrfs
+
 ## 2. blastx_batch_creation.sh and blastp_batch_creation.sh
 
   > for i in {0..X}; do sh blastx_batch_creation.sh $ACCOUNT $INPUT_DIR batch_prefix_$i $DB $i > scripts/blastx_$i ; sh blastp_batch_creation.sh $ACCOUNT $INPUT_DIR batch_prefix_$i $DB $i > scripts/blastp_$i ; done
@@ -39,7 +41,11 @@ Where:
 
 > for i in {0..X}; do cat TrinotatePFAM.out_$i >> TrinotatePFAM.out; cat HMM_pfam.out_$i >> HMM__pfam.out; done
 
-## 4. rnammer_creation.sh
+## 4. TransDecoder.Predict
+
+Open TransDecoder.md and run the part for TransDecoder.Predict
+
+## 5. rnammer_creation.sh
 
  > sh rnammer_creation.sh $ACCOUNT $INPUT_DIR $TRINOTATE_DIR $TRINITY.FASTA $PATH_RNAMMER > scripts/run_rnammer.sh
  
@@ -50,7 +56,7 @@ Where:
  - $TRINITY.FASTA is the output of the assembly
  - $PATH_RNAMMER is the path to the rnammer you are using
  
- ## 5. signalp_creation.sh
+ ## 6. signalp_creation.sh
 
  > sh signalp_creation.sh $ACCOUNT $INPUT_DIR $SIGNALP $PEP > scripts/run_signalp.sh
  
