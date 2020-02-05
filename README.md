@@ -27,4 +27,4 @@ Where:
  - X = number of batch files created by split_fasta.py
  - $ACCOUNT is the name of the account you use to run the jobs. Normally "def-something"
  - $INPUT_DIR is the directory where you saved the batch files created by split_fasta.py
- - batch_prefix is the name you gave to the batch files created by split_fasta.py
+ - batch_prefix is the name you gave to the batch files created by split_fasta.py with longest_orfs.pep
