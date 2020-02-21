@@ -29,7 +29,7 @@ If you do not have a "scripts" folder, run "mkdir scripts" before.
 
 ## 3. hmm_batch_creation.sh
 
- > for i in {0..X}; do sh hmm_batch_creation.sh $ACCOUNT $INPUT_DIR $i batch_prefix_$i > scripts/blastx_$i ; done
+ > for i in {0..X}; do sh hmm_batch_creation.sh $ACCOUNT $INPUT_DIR $i batch_prefix_$i > scripts/hmm_$i ; done
  
 Where:
  - X = number of batch files created by split_fasta.py
